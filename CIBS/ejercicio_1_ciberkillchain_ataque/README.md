@@ -4,7 +4,7 @@ Hacer una copia de este documento para utilizar com plantilla para el ejercicio 
 
 ## Alumno
 
-(completar)
+César Javier Fanelli
 
 ## Enunciado
 
@@ -56,7 +56,7 @@ Objetivo del ataque: inhabilitar sin destruir el puerto enemigo con vistas a pos
 
 ## Datos trabajo práctico
 
-link
+link a la planificación hecha en GdP [https://github.com/javifanelli/GdP]
 
 Muy breve descripción
 
