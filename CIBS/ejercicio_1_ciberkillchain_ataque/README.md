@@ -12,7 +12,7 @@ Armar una cyberkillchain usando técnicas de la matriz de Att&ck para un escenar
   
 ## Datos trabajo práctico
 
-En el siguiente link se encuentra la planificación del proyecto final hecha en la materia GdP [https://github.com/javifanelli/GdP]
+En el siguiente [link](https://github.com/javifanelli/GdP) se encuentra la planificación del proyecto final hecha en la materia Gestión de Proyectos.
 
 ### Descripción
 
