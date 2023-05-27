@@ -1,6 +1,6 @@
 # Ejercicio CiberKillChain - Ataque
 
-Hacer una copia de este documento para utilizar com plantilla para el ejercicio quitando las instrucciones y el ejemplo.
+Se realizó una copia del documento original utilizándolo como plantilla para la realización del ejercicio, quitando las instrucciones y el ejemplo.
 
 ## Alumno
 
@@ -9,24 +9,20 @@ César Javier Fanelli
 ## Enunciado
 
 Armar una cyberkillchain usando técnicas de la matriz de Att&ck para un escenario relacionado al trabajo práctico de la carrera.
+  
+## Datos trabajo práctico
 
-### Instrucciones
+En el siguiente link se encuentra la planificación del proyecto final hecha en la materia GdP [https://github.com/javifanelli/GdP]
 
-Debe haber un objetivo para el ataque.
+### Descripción
 
-El escenario debe ser con el sistema ya funcionando en el futuro.
+El trabajo práctico final de la carrera consta de un sistema de control de ambientes a distancia. Se pretende controlar la temperatura mediante calefacción y la iluminación de una habitación o recinto dentro de una casa, lo que sería un principio de domótica. El nodo de control estará implementado con un ESP32 y reportará y recibirá los datos de un servidor alojado en una Raspberry Pi de forma local. Dicho servidor alojará el frontend y el backend, y tendrá una interfaz web con logueo de usuarios para poder ver y cambiar los parámetros del nodo. La comunicación entre las partes se hará por MQTT.
+Para mayor información, por favor dirigirse a la planificación del proyecto donde se encuentra la propuesta de proyecto y la planificación del mismo.
 
-Debe ser en primera persona, es el punto de vista del atacante.
+## Resolución
 
-Es recomendable hacer dos o tres pasadas, en la primera la idea, en las siguientes refinamientos especificando las técnicas.
-PURO ATAQUE, nada de andar pensando cómo corregir nada.
-
-Para cada etapa, si hay varias medidas posibles, ordenar dejando para lo último lo que se va a hacer en el siguiente paso.
-
-### Ejemplo adaptado a un juego de guerra inventado:
-
-Objetivo del ataque: inhabilitar sin destruir el puerto enemigo con vistas a posteriormente tomarlo.
-
+<u>Objetivo del ataque:</u> tomar el control del sensor y actuador de temperatura e iluminación (nodo) para cambiar los parámetros de actuación, generando molestias y pudiendo generar pérdidas materiales en el hardware y sistema de calefacción.
+  
 * Reconnaissance
   - Imagen satelital identifica una pista de aterrizaje.
   - Espías dicen que por el puerto entra el combustible.
@@ -52,16 +48,3 @@ Objetivo del ataque: inhabilitar sin destruir el puerto enemigo con vistas a pos
 * Actions on Objectives
   - El equipo de comandos provoca daños menores en las cañerías.
   - El equipo de comandos coloca minas en el puerto dejando un camino para el desembarco.
-  
-
-## Datos trabajo práctico
-
-link a la planificación hecha en GdP [https://github.com/javifanelli/GdP]
-
-Muy breve descripción
-
-## Resolución
-
-
-  
-
