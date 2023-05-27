@@ -22,7 +22,7 @@ Para mayor información, por favor dirigirse a la [planificación del proyecto](
 
 ## Resolución
 
-<u>Objetivo del ataque:</u> tomar el control del sensor y actuador de temperatura e iluminación (nodo) para cambiar los parámetros de actuación, generando molestias y pudiendo generar pérdidas materiales en el hardware y sistema de calefacción.
+__Objetivo del ataque:__ tomar el control del sensor y actuador de temperatura e iluminación (nodo) para cambiar los parámetros de actuación, generando molestias y pudiendo generar pérdidas materiales en el hardware y sistema de calefacción.
   
 * Reconnaissance
   - Imagen satelital identifica una pista de aterrizaje.
