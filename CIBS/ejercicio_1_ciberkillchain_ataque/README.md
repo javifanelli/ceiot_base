@@ -17,7 +17,7 @@ En el siguiente [link](https://github.com/javifanelli/GdP) se encuentra la plani
 ### Descripción
 
 El trabajo práctico final de la carrera consta de un sistema de control de ambientes a distancia. Se pretende controlar la temperatura mediante calefacción y la iluminación de una habitación o recinto dentro de una casa, lo que sería un principio de domótica. El nodo de control estará implementado con un ESP32 y reportará y recibirá los datos de un servidor alojado en una Raspberry Pi de forma local. Dicho servidor alojará el frontend y el backend, y tendrá una interfaz web con logueo de usuarios para poder ver y cambiar los parámetros del nodo. La comunicación entre las partes se hará por MQTT.
-Para mayor información, por favor dirigirse a la planificación del proyecto donde se encuentra la propuesta de proyecto y la planificación del mismo.
+Para mayor información, por favor dirigirse a la [planificación del proyecto](https://github.com/javifanelli/GdP) donde se encuentra información detallada.
 
 ## Resolución
 
