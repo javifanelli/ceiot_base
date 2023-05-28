@@ -51,5 +51,7 @@ Técnicas utilizadas: [T1592](https://attack.mitre.org/techniques/T1592/) y [T15
 
 
 Enlaces:
+
 https://attack.mitre.org/techniques/T1590/
+
 https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html
