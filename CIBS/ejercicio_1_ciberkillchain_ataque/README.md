@@ -24,7 +24,7 @@ Para mayor información, por favor dirigirse a la [planificación del proyecto](
 
 **Objetivo del ataque:** tomar el control de los sensores y actuadores de temperatura e iluminación (nodo) para cambiar los parámetros de actuación, generando pérdidas materiales en el hardware, tanto en sensores como en actuadores. Esto se haría enviando los comandos de encender y apagar los actuadores repetidas veces sin crear los registros en la base de datos de mediciones ni mostrar los estados en la aplicación web vía MQTT. Por ejemplo, si se enciende y apaga consecutivas veces una calefacción eléctrica, se desgasta y daña prematuramente el actuador (contactos de un relé) y puede dañarse el sistema de calefacción, y el usuario no notaría a simple vista que el actuador está cambiando su estado.
 
-**Supuestos:** el nombre de usuario y contraseña para loguearse al sistema se encuentran en una base de datos sin encriptar.
+**Supuestos:** el nombre de usuario y contraseña para loguearse al sistema se encuentran en una base de datos sin encriptar. El server tiene el servicio de conexión SSH activado.
 
 ### Reconnaissance
 
@@ -53,13 +53,15 @@ Técnica utilizada: [T1566](https://attack.mitre.org/techniques/T1566/)
 
 Técnica utilizada: [T1021](https://attack.mitre.org/techniques/T1021/)
 
-  - 
+  - Acceso remoto al servidor vía SSH con las credenciales enviadas por el usuario.
+  - Recolección de toda la información de la red del usuario y de la solución en particular.
+  - Recolección de certificados utilizados en el protocolo MQTT para el envío de mensajes.
   
 ### Installation
 
-Técnica utilizada: []()
+Técnica utilizada: [T1543](https://attack.mitre.org/techniques/T1543/)
 
-  - 
+  - Instalación de malware de forma remota que permita tomar el control del envío de mensajes.
 
 ### Command & Control
 
@@ -69,13 +71,13 @@ Técnica utilizada: []()
   
 ### Actions on Objectives
 
-Técnica utilizada: []()
+Técnica utilizada: [T1059](https://attack.mitre.org/techniques/T1059/)
 
   - 
 
 
 #### Enlaces:
 
-https://attack.mitre.org/techniques/T1590/
+https://attack.mitre.org/
 
 https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html
