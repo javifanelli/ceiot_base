@@ -18,7 +18,7 @@ En el siguiente [link](https://github.com/javifanelli/GdP) se encuentra la plani
 
 El trabajo práctico final de la carrera consta de un sistema de control de ambientes a distancia. Se pretende controlar la temperatura mediante calefacción y la iluminación de una habitación o recinto dentro de una casa, lo que sería un principio de domótica. El nodo de control estará implementado con un ESP32 y reportará y recibirá los datos de un servidor alojado en una Raspberry Pi de forma local dentro de la casa. Dicho servidor alojará el frontend y el backend, y tendrá una interfaz web con logueo de usuarios para poder ver y cambiar los parámetros del nodo. La comunicación entre las partes se hará por MQTT y en el servidor se alojarán los valores de las mediciones en una base de datos.
 
-Para mayor información, por favor dirigirse a la [planificación del proyecto](https://github.com/javifanelli/GdP) donde se encuentra información detallada. Se recomienda leer la [propuesta de proyecto](https://github.com/javifanelli/GdP/blob/master/Propuesta%20de%20proyecto%20(corregida).pdf) y la [planificación](https://github.com/javifanelli/GdP/blob/master/charter.pdf).
+Para mayor información, por favor dirigirse a la [planificación del proyecto](https://github.com/javifanelli/GdP/blob/master/charter.pdf) donde se encuentra información detallada. Se recomienda leer también la [propuesta de proyecto](https://github.com/javifanelli/GdP/blob/master/Propuesta%20de%20proyecto%20(corregida).pdf).
 
 ## Resolución
 
@@ -59,21 +59,24 @@ Técnica utilizada: [T1021](https://attack.mitre.org/techniques/T1021/)
   
 ### Installation
 
-Técnica utilizada: [T1543](https://attack.mitre.org/techniques/T1543/)
+Técnica utilizada: [T1219](https://attack.mitre.org/techniques/T1219/)
 
-  - Instalación de malware de forma remota que permita tomar el control del envío de mensajes.
+  - Instalación o configuración de software de acceso remoto.
+  - Verificación de no detección por parte de ninguno de los componentes del sistema.
 
 ### Command & Control
 
-Técnica utilizada: []()
+Técnica utilizada: [T1543](https://attack.mitre.org/techniques/T1543/)
 
-  - 
+  - Instalación de malware de forma remota que permita tomar el control del envío de mensajes.
+  - Corroboración del funcionamiento del software instalado.
   
 ### Actions on Objectives
 
-Técnica utilizada: [T1059](https://attack.mitre.org/techniques/T1059/)
+Técnica utilizada: [T1569](https://attack.mitre.org/techniques/T1569/)
 
-  - 
+  - Configuración y ejecución del malware, que consta de envíos de cambio de estado a las salidas.
+  - Corroboración de persistencia del malware en el sistema, y que el propio sistema o usuario no noficó el mal funcionamiento del mismo.
 
 
 #### Enlaces:
