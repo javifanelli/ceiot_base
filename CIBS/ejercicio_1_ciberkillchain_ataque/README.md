@@ -23,8 +23,8 @@ Para mayor información, por favor dirigirse a la [planificación del proyecto](
 ## Resolución
 
 **Objetivo del ataque:** tomar el control del sensor y actuador de temperatura e iluminación (nodo) para cambiar los parámetros de actuación, generando molestias en los usuarios y pudiendo generar pérdidas materiales en el hardware y sensores o actuadores. Esto se haría obteniendo los datos de logueo de usuario con permisos para cambiar los parámetros de control del sistema.
-  
-* Reconnaissance
+
+### Reconnaissance
 
 Técnicas utilizadas: [T1592](https://attack.mitre.org/techniques/T1592/) y [T1590](https://attack.mitre.org/techniques/T1590/)
 
@@ -33,27 +33,44 @@ Técnicas utilizadas: [T1592](https://attack.mitre.org/techniques/T1592/) y [T15
   - Análisis de los tipos de nodos y sensores, en especial los parámetros leídos y modificados.
   - Análisis del modelo de aplicación web para comando de los nodos e información almacenada por el servidor.
   
-* Weaponization
-  Técnica utilizada: []()
+### Weaponization
+
+Técnica utilizada: []()
+
   - 
   
-* Delivery
+### Delivery
+
+Técnica utilizada: []()
+
   - 
   
-* Exploit
+### Exploit
+
+Técnica utilizada: []()
+
   - 
   
-* Installation  
+### Installation
+
+Técnica utilizada: []()
+
   - 
 
-* Command & Control
+### Command & Control
+
+Técnica utilizada: []()
+
   - 
   
-* Actions on Objectives
+### Actions on Objectives
+
+Técnica utilizada: []()
+
   - 
 
 
-Enlaces:
+#### Enlaces:
 
 https://attack.mitre.org/techniques/T1590/
 
