@@ -22,7 +22,9 @@ Para mayor información, por favor dirigirse a la [planificación del proyecto](
 
 ## Resolución
 
-**Objetivo del ataque:** tomar el control de los sensores y actuadores de temperatura e iluminación (nodo) para cambiar los parámetros de actuación, generando pérdidas materiales en el hardware, tanto en sensores como en actuadores. Esto se haría enviando los comandos de encender y apagar los actuadores repetidas veces sin crear los registros en la base de datos de mediciones ni mostrar los estados en la aplicación web. Por ejemplo, si se enciende y apaga consecutivas veces una calefacción eléctrica, se desgasta y daña prematuramente el actuador (contactos de un relé) y puede dañarse el sistema de calefacción, y el usuario no notaría a simple vista que el actuador está cambiando su estado.
+**Objetivo del ataque:** tomar el control de los sensores y actuadores de temperatura e iluminación (nodo) para cambiar los parámetros de actuación, generando pérdidas materiales en el hardware, tanto en sensores como en actuadores. Esto se haría enviando los comandos de encender y apagar los actuadores repetidas veces sin crear los registros en la base de datos de mediciones ni mostrar los estados en la aplicación web vía MQTT. Por ejemplo, si se enciende y apaga consecutivas veces una calefacción eléctrica, se desgasta y daña prematuramente el actuador (contactos de un relé) y puede dañarse el sistema de calefacción, y el usuario no notaría a simple vista que el actuador está cambiando su estado.
+
+**Supuestos:** el nombre de usuario y contraseña para loguearse al sistema se encuentran en una base de datos sin encriptar.
 
 ### Reconnaissance
 
@@ -32,22 +34,24 @@ Técnicas utilizadas: [T1592](https://attack.mitre.org/techniques/T1592/) y [T15
   - Análisis de la infraestructura y topología de red y la comunicación interna entre nodos y servidor.
   - Análisis de los tipos de nodos y sensores, en especial los parámetros leídos y modificados.
   - Análisis del modelo de aplicación web para comando de los nodos e información almacenada por el servidor.
+  - Análisis de la base de datos almacenada en el servidor.
   
 ### Weaponization
 
-Técnica utilizada: []()
+Técnica utilizada: [T1587](https://attack.mitre.org/techniques/T1587/)
 
-  - 
+  - Diseño de una página web igual o muy similar para solicitar el cambo de contraseña de logueo al sistema.
+  - Diseño del sistema de mensajes entre servidor y nodos replicando al original.
   
 ### Delivery
 
-Técnica utilizada: []()
+Técnica utilizada: [T1566](https://attack.mitre.org/techniques/T1566/)
 
-  - 
+  - Envío de mail al usuario solicitando cambio de usuario y contraseña o las credenciales importantes para tener acceso al servidor.
   
 ### Exploit
 
-Técnica utilizada: []()
+Técnica utilizada: [T1021](https://attack.mitre.org/techniques/T1021/)
 
   - 
   
