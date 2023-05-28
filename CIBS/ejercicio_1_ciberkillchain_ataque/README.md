@@ -22,7 +22,7 @@ Para mayor información, por favor dirigirse a la [planificación del proyecto](
 
 ## Resolución
 
-**Objetivo del ataque:** tomar el control del sensor y actuador de temperatura e iluminación (nodo) para cambiar los parámetros de actuación, generando molestias en los usuarios y pudiendo generar pérdidas materiales en el hardware y sensores o actuadores. Esto se haría obteniendo los datos de logueo de usuario con permisos para cambiar los parámetros de control del sistema.
+**Objetivo del ataque:** tomar el control de los sensores y actuadores de temperatura e iluminación (nodo) para cambiar los parámetros de actuación, generando pérdidas materiales en el hardware, tanto en sensores como en actuadores. Esto se haría enviando los comandos de encender y apagar los actuadores repetidas veces sin crear los registros en la base de datos de mediciones ni mostrar los estados en la aplicación web. Por ejemplo, si se enciende y apaga consecutivas veces una calefacción eléctrica, se desgasta y daña prematuramente el actuador (contactos de un relé) y puede dañarse el sistema de calefacción, y el usuario no notaría a simple vista que el actuador está cambiando su estado.
 
 ### Reconnaissance
 
@@ -73,4 +73,5 @@ Técnica utilizada: []()
 #### Enlaces:
 
 https://attack.mitre.org/techniques/T1590/
+
 https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html
