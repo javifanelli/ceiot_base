@@ -73,5 +73,4 @@ Técnica utilizada: []()
 #### Enlaces:
 
 https://attack.mitre.org/techniques/T1590/
-
 https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html
