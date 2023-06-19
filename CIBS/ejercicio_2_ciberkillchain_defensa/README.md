@@ -26,4 +26,4 @@ Se llega a la conclusión que el servidor fue comprometido y que es el encargado
 
 Técnicas utilizadas: [M1047](https://attack.mitre.org/mitigations/M1047/) y [M1033](https://attack.mitre.org/mitigations/M1033/)
 
-    - Se hace una auditoría del sistema del servidor corroborando que se instaló un software que no es parte de la solución.
+   - Se hace una auditoría del sistema del servidor corroborando que se instaló un software que no es parte de la solución.
