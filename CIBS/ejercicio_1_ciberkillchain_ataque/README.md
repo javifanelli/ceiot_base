@@ -22,31 +22,31 @@ Para mayor información, por favor dirigirse a la [planificación del proyecto](
 
 ## Resolución
 
-**Objetivo del ataque:** tomar el control de los sensores y actuadores de temperatura e iluminación (nodo) para cambiar los parámetros de actuación, generando pérdidas materiales en el hardware, tanto en sensores como en actuadores. Esto se haría enviando los comandos de encender y apagar los actuadores repetidas veces sin crear los registros en la base de datos de mediciones ni mostrar los estados en la aplicación web vía MQTT. Por ejemplo, si se enciende y apaga consecutivas veces una calefacción eléctrica, se desgasta y daña prematuramente el actuador (contactos de un relé) y puede dañarse el sistema de calefacción, y el usuario no notaría a simple vista que el actuador está cambiando su estado.
+**Objetivo del ataque:** tomar el control de los sensores y actuadores de temperatura e iluminación (nodo) para cambiar los parámetros de actuación, generando pérdidas materiales en el hardware, tanto en sensores como en actuadores y falta de credibilidad de los usuarios en la solución. Esto se haría enviando los comandos de encender y apagar los actuadores repetidas veces sin crear los registros en la base de datos de mediciones ni mostrar los estados en la aplicación web vía MQTT. Por ejemplo, si se enciende y apaga consecutivas veces una calefacción eléctrica, se desgasta y daña prematuramente el actuador (contactos de un relé) y puede dañarse el sistema de calefacción. De esta forma, los usuarios de la solución comenzarían a volcarse por la competencia. Dato a tener en cuenta, el servidor de la solución está alojado en las instalaciones de cada cliente en una Raspberry Pi, con un SO Linux.
 
-**Supuestos:** el nombre de usuario y contraseña para loguearse al sistema se encuentran en una base de datos sin encriptar. El server tiene el servicio de conexión SSH activado.
+**Supuestos:** el nombre de usuario y contraseña para loguearse al sistema se encuentran en una base de datos sin encriptar. El servidor tiene el servicio de conexión SSH activado.
 
 ### Reconnaissance
 
-Técnicas utilizadas: [T1592](https://attack.mitre.org/techniques/T1592/) y [T1590](https://attack.mitre.org/techniques/T1590/)
+Técnicas utilizadas: [T1592](https://attack.mitre.org/techniques/T1592/)
 
-  - Reconocimiento de la solución a través de las redes sociales o internet.
-  - Análisis de la infraestructura y topología de red y la comunicación interna entre nodos y servidor.
-  - Análisis de los tipos de nodos y sensores, en especial los parámetros leídos y modificados.
-  - Análisis del modelo de aplicación web para comando de los nodos e información almacenada por el servidor.
-  - Análisis de la base de datos almacenada en el servidor.
+  - Reconocimiento de la solución a través de las redes sociales y página oficial de la empresa creadora.
+  - Análisis y relevamiento del modelo de aplicación web obtenido de la página oficial de la empresa.
+  - Listado de los grandes clientes obtenido de la página de la empresa.
   
 ### Weaponization
 
 Técnica utilizada: [T1587](https://attack.mitre.org/techniques/T1587/)
 
-  - Diseño de una página web igual o muy similar para solicitar el cambo de contraseña de logueo al sistema.
-  - Diseño del sistema de mensajes entre servidor y nodos replicando al original.
+  - Diseño de una página web igual a la original para solicitar el cambo de contraseña de logueo al sistema.
+  - Diseño de un correo electrónico igual al que enviaría el sistema requiriendo un cambio de contraseña con un link a la página creada en el punto anterior de la Weaponization.
+  - Diseño de malware de que permita el envío de mensajes del servidor a los dispositivos.
   
 ### Delivery
 
 Técnica utilizada: [T1566](https://attack.mitre.org/techniques/T1566/)
 
+  - Selección de un cliente para ser atacado.
   - Envío de mail al usuario solicitando cambio de usuario y contraseña o las credenciales importantes para tener acceso al servidor.
   
 ### Exploit
@@ -54,15 +54,13 @@ Técnica utilizada: [T1566](https://attack.mitre.org/techniques/T1566/)
 Técnica utilizada: [T1021](https://attack.mitre.org/techniques/T1021/)
 
   - Acceso remoto al servidor vía SSH con las credenciales enviadas por el usuario.
-  - Recolección de toda la información de la red del usuario y de la solución en particular.
-  - Recolección de certificados utilizados en el protocolo MQTT para el envío de mensajes.
   
 ### Installation
 
 Técnica utilizada: [T1219](https://attack.mitre.org/techniques/T1219/)
 
-  - Instalación o configuración de software de acceso remoto.
   - Verificación de no detección por parte de ninguno de los componentes del sistema.
+  - Recolección de certificados utilizados en el protocolo MQTT para el envío de mensajes.
 
 ### Command & Control
 
