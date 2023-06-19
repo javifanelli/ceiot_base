@@ -27,3 +27,12 @@ Se llega a la conclusión que el servidor fue comprometido y que es el encargado
 Técnicas utilizadas: [M1047](https://attack.mitre.org/mitigations/M1047/) y [M1033](https://attack.mitre.org/mitigations/M1033/)
 
    - Se hace una auditoría del sistema del servidor corroborando que se instaló un software que no es parte de la solución.
+   - Se bloquea en el sistema operativo la capacidad de instalar software a cualquiera de los grupos y usuarios, previniendo así cualquier tipo de instalación de software malintencionado.
+
+### Installation
+
+Técnica utilizada: [M1038](https://attack.mitre.org/mitigations/M1038/)
+
+   - Se verifica y bloquea todo el software de acceso remoto y se anula la posibilidad de conectarse por SSH al servidor con usuario y contraseña.
+   - Se renuevan todos los certificados del broker MQTT y los nodos, a los cuales se les habilita la opción de renovarlos por OTA.
+
