@@ -36,3 +36,33 @@ Técnica utilizada: [M1038](https://attack.mitre.org/mitigations/M1038/)
    - Se verifica y bloquea todo el software de acceso remoto y se anula la posibilidad de conectarse por SSH al servidor con usuario y contraseña.
    - Se renuevan todos los certificados del broker MQTT y los nodos, a los cuales se les habilita la opción de renovarlos por OTA.
 
+### Exploit
+
+Técnica utilizada: [M1018](https://attack.mitre.org/mitigations/M1018/)
+
+   - Se quita el acceso por SSH de cualquier usuario, dejando un solo usuario administrador. Esto es una continuación del paso en Installation.
+   - Se renuevan todos los usuarios y contraseñas y se guardan cifrados en la base de datos de usuarios.
+
+### Delivery
+
+Técnica utilizada: [M1017](https://attack.mitre.org/mitigations/M1017/)
+
+   - Se da un aviso masivo a los clientes de la empresa que se vulneraron los sistemas debido a un mail con phishing, y se los entrena para detectar este tipo de reemplazos de identidad fraudulentos.
+
+### Weaponization
+
+Esta etapa es un tanto complicada de eludir, pero como prevención se intentará mantener informados a los clientes con que no divulguen claves o sepan diferencias enlaces falsos de originales de la solución.
+
+### Reconnaissance
+
+Técnicas utilizadas: [DS0035](https://attack.mitre.org/datasources/DS0035/)
+
+   - Minimizar la información expuesta acerca de clientes y expecificaciones técnicas sobre la solución, a fin de evitar divulgar información que pueda llevar a engaños.
+   - Evitar publicar datos sobre los clientes en las redes sociales para disminuir los contactos con ellos.
+
+
+#### Enlaces:
+
+https://attack.mitre.org/
+
+https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html
