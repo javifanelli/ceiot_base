@@ -22,39 +22,8 @@ Se desconecta del sistema nodos y servidor y se hace una verificación del funci
 
 Se llega a la conclusión que el servidor fue comprometido y que es el encargado de enviar los mensajes, mientras que los nodos funcionan de manera correcta y actúan de la forma que el servidor se los mande. Se notifica que el servidor fue víctima de un hackeo por una vulnerabilidad propia y se procede a mitigar los riesgos.
 
-### Command & Control
+### Command and control
 
 Técnicas utilizadas: [M1047](https://attack.mitre.org/mitigations/M1047/) y [M1033](https://attack.mitre.org/mitigations/M1033/)
 
     - Se hace una auditoría del sistema del servidor corroborando que se instaló un software que no es parte de la solución.
-    - 
-
-### Installation
-
-Técnica utilizada: []()
-
-    -
-
-### Exploit
-
-Técnica utilizada: []()
-
-    -
-
-### Delivery
-
-Técnica utilizada: []()
-
-    -
-
-### Weaponization
-
-Técnica utilizada: []()
-
-    -
-
-### Reconnaissance
-
-Técnica utilizada: []()
-
-    -
