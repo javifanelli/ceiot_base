@@ -66,14 +66,14 @@ Técnica utilizada: [T1219](https://attack.mitre.org/techniques/T1219/)
 
 Técnica utilizada: [T1543](https://attack.mitre.org/techniques/T1543/)
 
-  - Instalación de malware de forma remota que permita tomar el control del envío de mensajes.
+  - Instalación y configuración de malware de forma remota que permita tomar el control del envío de mensajes.
   - Corroboración del funcionamiento del software instalado.
   
 ### Actions on Objectives
 
 Técnica utilizada: [T1569](https://attack.mitre.org/techniques/T1569/)
 
-  - Configuración y ejecución del malware, que consta de envíos de cambio de estado a las salidas.
+  - Ejecución del malware, que consta de envíos de cambio de estado a las salidas.
   - Corroboración de persistencia del malware en el sistema, y que el propio sistema o usuario no noficó el mal funcionamiento del mismo.
 
 
